@@ -92,7 +92,7 @@ class _StartPageState extends State<StartPage> {
 
 Widget _typer(){
   return SizedBox(
-    width: 250.0,
+    width: 300.0,
     child: DefaultTextStyle(
       style: const TextStyle(
         fontSize: 20.0,
@@ -105,7 +105,8 @@ Widget _typer(){
                 " both arise out of man's relationship with his fellows."
                 " The larger the group, the greater the possibility of development through cooperation,"
                 " and the greater the possibility of conflict.\n"
-                "  - Julius K. Nyerere"
+                "\n"
+                "      - Julius K. Nyerere"
 
                 ,speed: const Duration(milliseconds: 100)),
           ]
