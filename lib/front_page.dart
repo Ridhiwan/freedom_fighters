@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:freedom_fighters/introducer.dart';
 import 'package:freedom_fighters/qoutes.dart';
-import 'package:freedom_fighters/typer.dart';
-import 'package:freedom_fighters/web_page.dart';
 
 class FrontPage extends StatefulWidget {
   const FrontPage({Key? key}) : super(key: key);
@@ -39,108 +38,31 @@ class _FrontPageState extends State<FrontPage> {
         scrollDirection: Axis.horizontal,
         physics: const PageScrollPhysics(),
         shrinkWrap: true,
-        children: [
-          Container(
-          decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage("https://img.freepik.com/premium-vector/african-ethnic-tribal-clash-ornament-seamless-pattern-background-simple-lines-triangles_499817-1131.jpg?w=740"),
-                  fit: BoxFit.cover
-              )
+        children: const [
+          Introducer(
+              quote: jk,
+              title: "Julius Nyerere",
+              url: "https://en.wikipedia.org/wiki/Julius_Nyerere",
+              imagePath: "assets/images/Nyerere.jpg"
           ),
-          padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYdZWf64BYWN6HFVqN6Pa7IbsiQkgwO_0AKA&usqp=CAU",
-                width: 300,
-                height: 300,
-                fit: BoxFit.cover,),
-              Center(
-                child: Container(
-                  decoration: const BoxDecoration(
-                      color: Colors.black,
-                      shape: BoxShape.rectangle,
-                      borderRadius: BorderRadius.all(Radius.circular(20))
-                  ),
-                  height: 360.0,
-                  width: 380.0,
-                  child: Center(
-                    child: typer(jk),
-                  ),
-
-
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromRGBO(153, 0, 0, 1),),
-                    onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(
-                              builder: (context) => const WebPage(
-                                  title: "Julius Nyerere",
-                                  selectedUrl: "https://en.wikipedia.org/wiki/Julius_Nyerere")
-                          )
-                      );
-                      },
-                    child: const Text("Biography")),
-              )
-            ],
+          Introducer(
+              quote: nm,
+              title: "Nelson Mandela",
+              url: "https://en.wikipedia.org/wiki/Nelson_Mandela",
+              imagePath: "assets/images/Mandela.jpg"
           ),
-        ),
-          Container(
-          decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage("https://img.freepik.com/premium-vector/african-ethnic-tribal-clash-ornament-seamless-pattern-background-simple-lines-triangles_499817-1131.jpg?w=740"),
-                  fit: BoxFit.cover
-              )
+          Introducer(
+              quote: kn,
+              title: "Kwame Nkrumah",
+              url: "https://en.wikipedia.org/wiki/Kwame_Nkrumah",
+              imagePath: "assets/images/Nkrumah.jpg"
           ),
-            padding: const EdgeInsets.fromLTRB(2, 0, 10, 0),
-            child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.network("https://hips.hearstapps.com/hmg-prod/images/_photo-by-per-anders-petterssongetty-images.jpg",
-                width: 300,
-                height: 300,
-                fit: BoxFit.cover,),
-              Center(
-                child: Container(
-                  decoration: const BoxDecoration(
-                      color: Colors.black,
-                      shape: BoxShape.rectangle,
-                      borderRadius: BorderRadius.all(Radius.circular(20))
-                  ),
-                  height: 360.0,
-                  width: 380.0,
-                  child: Center(
-                    child: typer(nm),
-                  ),
-
-
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromRGBO(153, 0, 0, 1),),
-                    onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(
-                              builder: (context) => const WebPage(
-                                  title: "Nelson Mandela",
-                                  selectedUrl: "https://en.wikipedia.org/wiki/Nelson_Mandela")
-                          )
-                      );
-                      },
-                    child: const Text("Biography")),
-              )
-            ],
+          Introducer(
+              quote: jok,
+              title: "Jomo Kenyatta",
+              url: "https://en.wikipedia.org/wiki/Jomo_Kenyatta",
+              imagePath: "assets/images/Kenyatta.jpg"
           ),
-        ),
         ]
       ),
     );
