@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:freedom_fighters/introducer.dart';
-import 'package:freedom_fighters/qoutes.dart';
+import 'package:freedom_fighters/custom_widgets/introducer.dart';
+import 'package:freedom_fighters/data/qoutes.dart';
 
 class FrontPage extends StatefulWidget {
   const FrontPage({Key? key}) : super(key: key);
@@ -36,7 +36,6 @@ class _FrontPageState extends State<FrontPage> {
       ),
       body: ListView(
         scrollDirection: Axis.horizontal,
-        physics: const PageScrollPhysics(),
         shrinkWrap: true,
         children: const [
           Introducer(
@@ -62,6 +61,12 @@ class _FrontPageState extends State<FrontPage> {
               title: "Jomo Kenyatta",
               url: "https://en.wikipedia.org/wiki/Jomo_Kenyatta",
               imagePath: "assets/images/Kenyatta.jpg"
+          ),
+          Introducer(
+              quote: ts,
+              title: "Thomas Sankara",
+              url: "https://en.wikipedia.org/wiki/Thomas_Sankara",
+              imagePath: "assets/images/Sankara.jpg"
           ),
         ]
       ),

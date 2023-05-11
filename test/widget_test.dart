@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:freedom_fighters/front_page.dart';
+import 'package:freedom_fighters/pages/front_page.dart';
 
 import 'package:freedom_fighters/main.dart';
 

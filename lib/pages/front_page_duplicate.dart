@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:freedom_fighters/qoutes.dart';
-import 'package:freedom_fighters/typer.dart';
-import 'package:freedom_fighters/web_page.dart';
+import 'package:freedom_fighters/data/qoutes.dart';
+import 'package:freedom_fighters/custom_widgets/typer.dart';
+import 'package:freedom_fighters/pages/web_page.dart';
 
 class FrontPage extends StatefulWidget {
   const FrontPage({Key? key}) : super(key: key);

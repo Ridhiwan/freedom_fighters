@@ -1,7 +1,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:freedom_fighters/front_page.dart';
+import 'package:freedom_fighters/pages/front_page.dart';
 
 void main() {
    runApp(

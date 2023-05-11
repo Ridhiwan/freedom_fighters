@@ -27,3 +27,11 @@ const jok = "To .. all the dispossessed youth of Africa:"
     "\n"
     "      - Jomo Kenyatta";
 
+const ts = "Imperialism is a system of exploitation that occurs not only in the"
+    " brutal form of those who come with guns to conquer territory."
+    " Imperialism often occurs in more subtle forms, a loan, food aid, blackmail ."
+    " We are fighting this system that allows a handful of men on earth to rule all of humanity.\n"
+    "\n"
+    "      - Thomas Sankara";
+
+
